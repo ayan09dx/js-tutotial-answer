@@ -12,6 +12,8 @@ function checkLoginStatus(){
         window.location.href='./login.html';
     }
     else{
+        let history=localStorage.getItem('resulthistory');
+        resultArray=history?JSON.parse(history):[];
         refreshTable();
     }
 }
