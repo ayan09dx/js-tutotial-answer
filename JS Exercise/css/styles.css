@@ -1,0 +1,226 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+.loginwrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.loginwrap img{
+    width: 65%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.loginbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    
+}
+
+form{
+    width: 80%;
+
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: 600;
+    color: #280071;
+    margin-top: 30px;
+}
+
+label b{
+    color: red;
+    
+}
+
+input{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid #00a5ec;
+}
+
+.loginwrap button{
+    height: 45px;
+    border-radius: 5px;
+    background: #F6D455;
+    color: #280071;
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.loginwrap button:hover{
+    background: #280071;
+    color: white;
+}
+
+
+header{
+    height: 60px;
+    background: #280071;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header button{
+    height: 40px;
+    background: #F6D455;
+    color: #280071;
+    padding: 10px 60px;
+    position: absolute;
+    border: none;
+    font-weight: 550;
+    top:10px;
+    right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.topimg{
+    height: 259px;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.calculatorbox{
+    margin: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculationbox{
+    margin: 50px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculatorbox h3{margin: 0px;padding: 0px;margin-bottom: 30px;}
+.numberinputwrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numberinputwrap .inputbox{
+    width: 40%;
+
+}
+
+.numberinputwrap label{margin-top: 0px !important}
+
+.operation{
+ height: 50px;
+ width: 50px;
+ background:#00a5ec;
+ display: flex;
+ color: white;
+ justify-content: center;
+ align-items: center;
+ font-weight: bold;
+ font-size: 25px;
+ border-radius: 50px;
+ margin-top: 20px;
+}
+
+.operationsbox{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.operationsbox button{
+    padding: 20px 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: #E8F9FF;
+    color: #280071;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.operationsbox button:last-child{
+    background-color: #F6D455;
+    font-size: 22px;
+}
+
+.operationsbox .selected{
+    background-color: #00a5ec;
+    color: white;
+}
+
+table{
+    min-width:60%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #280071;
+    color: white;
+}
+td{
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+
+.error{
+    color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.result{
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+

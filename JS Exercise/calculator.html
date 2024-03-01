@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Calculator Exercise</title>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <script src="./scripts/calculator.js"></script>
+    </head>
+    <body onload="checkLoginStatus();">
+        <header>
+            <h3>Welcome , User Name</h3>
+            <button onclick="Logout();">Logout</button>
+        </header>
+        <img src="./imgs/hometop.png" alt="Calculator" class="topimg"/>
+        <div class="calculatorbox">
+            <h3>Simple Calculator</h3>
+            <div class="numberinputwrap">
+                <div class="inputbox">
+                    <label for="number1">Number1<b>*</b></label>
+                    <input type="number" id="number1"  onchange="resetError();"/>
+                    
+                </div>
+                <div class="operation" id="operation">+</div>
+                <div class="inputbox">
+                    <label for="number2">Number2<b>*</b></label>
+                    <input type="number" id="number2" onchange="resetError();"/>
+                   
+                </div>
+
+            </div>
+            <p id="number1error" class="error">number 1 cannot be empty</p>
+            <p id="number2error" class="error">number 2 cannot be empty</p>
+            <p id="result" class="result"></p>
+            <div class="operationsbox">
+                <button class="selected" id="plus" onclick="handleOperationClick('+');">+</button>
+                <button id="minus" onclick="handleOperationClick('-');">- </button>
+                <button id="multiply" onclick="handleOperationClick('*');"> * </button>
+                <button id="divide" onclick="handleOperationClick('/');"> / </button>
+                <button onclick="handleCalculation();">Result</button>
+            </div>
+            
+        </div>
+
+        <div class="calculationbox">
+            <h3>My Calculations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Date & Time</td>
+                        <td>Operation</td>
+                        <td>Result</td>
+                    </tr>
+                </thead>
+                <tbody id="tabledata">
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>

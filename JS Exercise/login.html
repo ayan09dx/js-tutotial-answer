@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Calculator Exercise</title>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <script src="./scripts/login.js"></script>
+    </head>
+    <body onload="checkLoginStatus();">
+        <div class="loginwrap">
+            <img src="./imgs/loginimg.png" alt="loginimg"/>
+            <div class="loginbox">
+                <h3>Calculator App Login</h3>
+                <form action="" onsubmit="checkFormInput(event);">
+                    <div class="inputbox">
+                        <label for="username">Username<b>*</b></label>
+                        <input type="text" id="username" onchange="resetError();"/>
+                        <p id="usererror" class="error">Username cannot be empty</p>
+                    </div>
+                    <div class="inputbox">
+                        <label for="username">Password<b>*</b></label>
+                        <input type="password" id="password" onchange="resetError();"/>
+                        <p id="passworderror" class="error">Password cannot be empty</p>
+                    </div>
+                    <button>Login</button>
+                    <p id="loginerror" class="error"></p>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
